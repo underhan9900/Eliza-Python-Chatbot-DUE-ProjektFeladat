@@ -1,5 +1,4 @@
 1966 Eliza Chatbot DUE Projekt Feladat - Katona József N5HB8N
-
 Python 3.13
 
 A projektemben az 1966-ban készült ELIZA chatbotot készítettem újra Python nyelven.
