@@ -27,3 +27,15 @@ A program háromféle módszerrel válaszol. Kulcsszavak alapján, például ha 
 Emellett van egy nagyon egyszerű memóriája is. Ha családi témát ismer fel, ezt eltárolja, és később visszautalhat rá.
 
 A grafikus felület csupán a használatot egyszerűsíti, és szebb kinézetet kölcsönöz a programnak.
+
+A program két Python-fájlból áll. A main.py a grafikus felületért felel, a KJ_eliza.py pedig a chatbot működését tartalmazza a KJ_Eliza osztályban.
+
+Amikor a felhasználó ír egy üzenetet, a KJ_send() függvény beolvassa, majd továbbítja a KJ_respond() metódusnak. Itt a strip() eltávolítja a felesleges szóközöket, majd a program megvizsgálja az üzenetet.
+
+Ha családdal kapcsolatos szót talál, akkor ezt a last_topic változóban eltárolja, így később például egy yes vagy no válasznál vissza tud utalni rá.
+
+A KJ_patterns() tartalmazza az előre megadott szabályokat, amelyeket a program a re.search() segítségével ellenőriz. Ha talál egyezést, akkor a random.choice() kiválaszt egy választ.
+
+Ha nem talál egyezést, akkor a re.fullmatch() segítségével bizonyos mondatszerkezeteket is megvizsgál, például az „I feel lonely” mondatot. Az „I want” vagy „I need” kezdetű mondatoknál a KJ_reflect() is működésbe lép, amely a re.findall() segítségével szavakra bontja a szöveget, majd átalakítja a megfelelő névmásokat. A re.sub() ezután rendezi az írásjelek előtti szóközöket.
+
+Ha egyik szabály sem illik az üzenetre, akkor a program egy véletlenszerű általános választ ad. Végül a KJ_respond() visszaküldi a választ a main.py-nak, ahol a KJ_display() megjeleníti azt a beszélgetési ablakban.
