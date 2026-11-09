@@ -4,7 +4,7 @@ Python 3.13
 
 A projektemben az 1966-ban készült ELIZA chatbotot készítettem újra Python nyelven.
 Az ELIZA az egyik első olyan program volt, amely képes volt beszélgetést szimulálni a felhasználóval. Nem használt mai értelemben vett mesterséges intelligenciát, hanem előre megadott szabályok és kulcsszavak alapján válaszolt.
-A saját változatom angol nyelven működik, felismer bizonyos mondatmintákat, egyszerű mondatátalakítást végez, és egy korábban említett témát is képes megjegyezni témát is képes megjegyezni, de a program valójában nem érti a mondatok jelentését
+A saját változatom angol nyelven működik, felismer bizonyos mondatmintákat, egyszerű mondatátalakítást végez, és egy korábban említett témát is képes megjegyezni, de a program valójában nem érti a mondatok jelentését
 
 Felhasznált modulok
 
@@ -16,7 +16,7 @@ random: Véletlenszerű válaszok kiválasztása.
 
 KJ_eliza: Saját modul, amely a chatbot működését tartalmazza.
 
-Program müködése: 
+Program működése: 
 A programot a main.py futtatásával lehet elindítani.
 
 A program működése viszonylag egyszerű, összesen 5 lépésből áll.
