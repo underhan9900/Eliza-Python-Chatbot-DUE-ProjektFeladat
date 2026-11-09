@@ -1,4 +1,4 @@
-1966 Eliza Chatbot DUE Projekt Feladat 
+1966 Eliza Chatbot DUE Projekt Feladat - Katona József N5HB8N
 
 Python 3.13
 
